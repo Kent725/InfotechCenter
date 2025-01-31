@@ -1,6 +1,2 @@
-# Programmer: Kent Chheu
-# Branch: Welcome
-# Date: 1.30.2025
-# Progress: BlackWidow
-
-print("Welcome to InfoTechCenter V1.0")
+print("Welcome Branch - Developer: Kent Chheu")
+print("\n\tWelcome to InfoTechCenter V1.0")
