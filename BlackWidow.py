@@ -1,6 +1,6 @@
 # Print a decorative header
 print("\n*****************************************\n")
-print("Weather Branch - Developer: Kent Chheu\n")
+print("Weather Branch - Developer: Kent Chheu")
 
 # Import necessary libraries
 import random  # Used for generating random weather conditions
@@ -22,20 +22,32 @@ def vehicleResponseSystem():
     if weatherAlert == "snowing":
         print("\nThe National Weather Service has updated our alarm by 30 minutes because"
         " of the forecast of", weatherAlert, "outside.")
+        sleep(1)
+        print("VRS had been engaged only allowing us to drive 55MPH.")
     elif weatherAlert == "blizzard":
         print("\nThe National Weather Service has updated our alarm by 60 minutes because"
         " of the forecast of", weatherAlert, "outside.")
+        sleep(1)
+        print("VRS had been engaged only allowing us to drive 45MPH.")
     elif weatherAlert == "icy":
         print("\nThe National Weather Service has updated our alarm by 90 minutes because"
         " of the forecast of", weatherAlert, "outside.")
+        sleep(1)
+        print("VRS had been engaged only allowing us to drive 35MPH.")
     elif weatherAlert == "rainy":
         print("\nThe National Weather Service has updated our alarm by 10 minutes because"
         " of the forecast of", weatherAlert, "outside.")
+        sleep(1)
+        print("VRS had been engaged only allowing us to drive 65MPH.")
     elif weatherAlert == "windy":
         print("\nThe National Weather Service has updated our alarm by 5 minutes because"
         " of the forecast of", weatherAlert, "outside.")
+        sleep(1)
+        print("VRS had been engaged only allowing us to drive 70MPH.")
     else:  # Default case for "sunny"
-        print("\nThe National Weather Service is calling for", weatherAlert, "skies outside, drive safe!")
+        print("\nThe National Weather Service is calling for", weatherAlert, "skies outside.")
+        sleep(1)
+        print("VRS had been disengaged, drive safe!")
 
 # Call the function to display the weather response
 vehicleResponseSystem()
