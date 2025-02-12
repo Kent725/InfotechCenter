@@ -1,6 +1,8 @@
 # Importing necessary libraries
 import sys   # For system-specific parameters and functions
 import time  # For adding delay in execution
+import random
+from time import sleep
 
 # ANSI Escape Codes for Colors
 CYAN = "\033[96m"   # Light cyan text color
@@ -39,10 +41,9 @@ while x != 20:
     if x == 20:
         print(GREEN + "\n\nOperating System Booted Up - Retina Scanned - Access Granted\n" + RESET)
         
-import random
 
 # Print a decorative header
-print("\n*****************************************\n")
+print("*****************************************\n")
 print("Weather Branch - Developer: Kent Chheu")
 
 # Function to determine the weather condition randomly
@@ -67,9 +68,11 @@ def vehicle_response_system(weather_condition):
         if speed:
             print(f"\nThe National Weather Service has updated our alarm by {delay} minutes "
                   f"because of the forecast of {weather_condition} outside.")
+            sleep(1)
             print(f"VRS has been engaged, only allowing us to drive {speed} MPH.")
         else:
             print(f"\nThe National Weather Service is calling for {weather_condition} skies outside.")
+            sleep(1)
             print("VRS has been disengaged, drive safe!")
 
 # Get the current weather and determine the response
