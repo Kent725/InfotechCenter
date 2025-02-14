@@ -1,4 +1,3 @@
-# Programmer: Kent Chheu
-# Branch: Gasoline
-# Date:
-# Progress
+print("\n********************************\n")
+print("Gasoline Branch - Developer: Kent Chheu\n")
+
