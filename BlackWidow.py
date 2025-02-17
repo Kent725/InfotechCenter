@@ -1,5 +1,6 @@
-print("\n********************************\n")
-print("Gasoline Branch - Developer: Kent Chheu\n")
+print("\n********************************************\n")
+print("Gasoline Branch - Developer: Kent Chheu")
+print("\n********************************************\n")
 
 import random 
 from time import sleep
@@ -18,18 +19,25 @@ def gasLevelAlert():
     gasLevelIndicator = gasLevelGauge()
     if gasLevelIndicator == "Empty":
         print("WARNING: YOU ARE OUT OF GAS!")
-        print("CALLING DEFAULT INSURANCE COMPANY!\n")
+        print("\nCALLING DEFAULT INSURANCE COMPANY!\n")
+
     elif gasLevelIndicator == "Low":
         print("WARNING: YOUR GAS IS LOW, CHECKING GPS FOR CLOSEST GAS STATIONS!")
-        print("CLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationLow, "MILES AWAY!\n")
+        print("\nCLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationLow, "MILES AWAY!\n")
+
     elif gasLevelIndicator == "Quarter Tank":
         print("WARNING: YOUR GAS IS ON A QUARTER TANK, CHECKING GPS FOR CLOSEST GAS STATIONS!")
-        print("CLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationQuarterTank, "MILES AWAY!\n")
+        print("\nCLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationQuarterTank, "MILES AWAY!\n")
+
     elif gasLevelIndicator == "Half Tank":
         print("WARNING: YOUR GAS IS ON A HALF TANK!")
-        print("IS ENOUGH GAS TO GET TO YOUR DESTINATION\n")
+        print("\nIS ENOUGH GAS TO GET TO YOUR DESTINATION\n")
+
     elif gasLevelIndicator == "Three Quarter Tank":
         print("WARNING: YOUR GAS IS ON A THREE QUARTER TANK!\n")
+
     else:
         print("YOUR GAS IS ON A FULL TANK!\n")
 gasLevelAlert()
+
+print("********************************************\n")
