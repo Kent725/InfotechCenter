@@ -23,7 +23,13 @@ def gasLevelAlert():
         print("WARNING: YOUR GAS IS LOW, CHECKING GPS FOR CLOSEST GAS STATIONS!")
         print("CLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationLow, "MILES AWAY!")
     elif gasLevelIndicator == "Quarter Tank":
-        print("WARNING: YOUR GAS IS QUARTER TANK, CHECKING GPS FOR CLOSEST GAS STATIONS!")
+        print("WARNING: YOUR GAS IS ON A QUARTER TANK, CHECKING GPS FOR CLOSEST GAS STATIONS!")
         print("CLOSEST GAS STATION IS", gasStations(), "WHICH IS", milesToGasStationQuarterTank, "MILES AWAY!")
-
+    elif gasLevelIndicator == "Half Tank":
+        print("WARNING: YOUR GAS IS ON A HALF TANK!")
+        print("IS ENOUGH GAS TO GET TO YOUR DESTINATION")
+    elif gasLevelIndicator == "Three Quarter Tank":
+        print("WARNING: YOUR GAS IS ON A THREE QUARTER TANK!")
+    else:
+        print("YOUR GAS IS ON A FULL TANK!")
 gasLevelAlert()
