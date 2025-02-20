@@ -154,3 +154,5 @@ def vehicle_response_system(weather_condition):
 # Get the current weather and determine the response
 current_weather = get_weather()
 vehicle_response_system(current_weather)
+
+#Hello
